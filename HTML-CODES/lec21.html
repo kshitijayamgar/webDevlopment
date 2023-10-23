@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment-float & clear</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Italianno&family=Raleway:wght@100&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: cursive;
+        }
+
+        h1 {
+            margin-left: 260px;
+        }
+
+        .container {
+            width: 900px;
+            border: 3px solid rgb(99, 67, 99);
+            margin: 255px;
+            background-color: palegreen;
+        }
+
+        .item {
+            border: 5px solid grey;
+            margin: 12px 3px;
+            padding: 12px 3px;
+            background-color: rgb(195, 138, 248);
+        }
+
+        #fruit {
+            float: left;
+            width: 48%;
+        }
+
+        #computer {
+            float: left;
+            width: 48%;
+
+        }
+
+        #stationary {
+            /*float: left;*/
+            clear: left;
+            /* clear property mule element overlap hot nahit... values veglya veglya ahet*/
+            width: 100%;
+
+        }
+
+        p,
+        h3 {
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>welcome to my store</h1>
+        <div id="fruit" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus doloribus
+                repellendus, quam corrupti assumenda libero labore. Rem aspernatur voluptatem Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Illum modi eligendi reprehenderit natus voluptatum esse aperiam, commodi
+                iste unde voluptatibus excepturi tenetur harum deserunt error.</p>
+
+        </div>
+        <div id="computer" class="item">
+            <h3>computer</h3>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+                doloribus repellendus, quam corrupti assumenda libero labore. Rem aspernatur voluptatem Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Illum modi eligendi reprehenderit natus voluptatum esse
+                aperiam, commodi iste unde voluptatibus excepturi tenetur harum deserunt error.</p>
+
+        </div>
+        <div id="stationary" class="item">
+            <h3>stationary</h3>
+            <p id="stationarypara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+                doloribus repellendus, quam corrupti assumenda libero labore. Rem aspernatur voluptatem laudantium.</p>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
