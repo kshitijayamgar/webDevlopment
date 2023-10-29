@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Menu</title>
+    <style>
+      .navbar{
+              background-color: black;
+              border-radius: 15px;
+
+
+
+      }
+      .navbar ul{
+
+        overflow: auto;/* background color overflow zaala tyacla nit kel ith*/
+
+      }
+      .navbar li{
+
+         float: left;  /* jeva ekhada element float krto teva tyachya parent kdun overflow hotat*/
+         list-style: none;/* bullets yet hotya tya ghalvnyasathi*/
+         margin: 15px 25px;
+         /*padding: 5px 5px;  ithe  padding nahi dyachi*/ 
+      }
+      .navbar li a{
+           padding: 5px 5px; 
+          text-decoration: none;
+          color: white;
+          
+        }
+        .navbar li a:hover{
+             
+           background-color:white;
+            border-radius: 8px;
+            color:black;
+        }
+      .search{
+          float: right;
+        color: azure;
+         padding: 12px 75px;
+      }
+     .navbar input{
+             
+        border: 3px solid aquamarine;
+        border-radius: 8px;
+        padding: 3px;
+
+
+
+     }
+     
+
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">CONTACT-US</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="Search">
+                
+                </div>
+            </ul>
+           
+
+        </nav>
+
+    </header>
+
+
+
+</body>
+
+</html>
