@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display-property</title>
+    <style>
+        img {
+
+            display: block;
+            width: 35px;
+            margin: auto;
+            
+        }
+
+        h3 {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            margin: 0px;
+
+        }
+
+        header {
+            margin: auto;
+            border: 5px solid red;
+            /*width: 99%;*/
+            width: 10%;
+          /*  display: inline;*/
+          /* header ha ek block element ahe jyachi aapn width set kru shkto*/
+
+        }
+
+        .box {
+
+            border: 5px solid black;
+            background: goldenrod;
+            margin: 4px;
+            padding: 25px;
+            display: inline-block;
+            width: 30%;
+            box-sizing: border-box;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header class="top">
+        <img src="backposes.jpg" alt="">
+        <h3>welcome to myvlog</h3>
+        
+    </header>
+    <div class="container">
+
+        <div class="box">
+
+            <h4 class="heading"> Heading
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod repellat atque consequatur a dicta
+                    explicabo impedit? Fugiat doloremque numquam quia vel voluptatum et, alias nulla autem dicta minus
+                    quisquam veniam.</p>
+            </h4>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="box">
+
+            <h4 class="heading">heading
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod repellat atque consequatur a dicta
+                    explicabo impedit? Fugiat doloremque numquam quia vel voluptatum et, alias nulla autem dicta minus
+                    quisquam veniam.</p>
+            </h4>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
