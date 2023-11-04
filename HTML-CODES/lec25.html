@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position-property</title>
+    <style>
+        .box {
+            display: inline-block;
+            border: 5px solid brown;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+        }
+
+        #box1 {
+
+            position: static;
+        }
+
+        #box3 {
+            /*position: absolute;*/
+            /* realtive mnje relative to its normal position mnje tyachya normal positions chya relative to haalchaal kru shknar top,bottom etc..*/
+
+            /*position: relative;*/
+
+            /* jr position relative asel tr aapn top ,bottom,left,right sagl laavu shkto tya box vr*/
+            /*top: 34px;
+       left: 34px;*/
+            /*right: 34px;
+       bottom: 34px;*/
+
+
+            /* position: absolute;*/
+
+
+            /* absolute ne box tychya parent la jaun chitkto hya code nusar body tag tycha parent ahe.*/
+
+            /*position: fixed; */ 
+            /*scroll kel tri ekach thikani rahnar until scrolling end browser window  mde 
+            right: 5px;*/
+            position: sticky;
+            top: 4px;
+            /* same like fixed pn ha vrchya side la chitkun rahto..*/
+        }
+
+        /* Position types:- absolute,relative,static(static hee by defaulty set ch aste),fixed,sticky*/
+  
+      .container{
+
+         border: 5px solid purple;
+         background-color: greenyellow;
+         height: 3444px;
+
+      }
+
+  
+  
+  
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+
+        <div class="box" id="box1">
+
+        </div>
+
+        <div class="box" id="box2">
+
+        </div>
+
+        <div class="box" id="box3">
+
+        </div>
+
+        <div class="box" id="box4">
+
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
