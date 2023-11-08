@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym-website</title>
+      <link rel="stylesheet" href="lec24.css">
+      <style>
+          body{
+               margin: 0px;
+               padding: 0px;
+               background: url(abs-1850926_1280.jpg);
+               color: white;
+
+          }
+
+
+          .left{
+                display: inline-block;
+               /*border: 5px solid greenyellow;*/
+               position: absolute;
+               left: 60px;
+               top: 20px;
+
+
+          }
+
+
+          .center{
+            margin:  20px auto;
+            display: block;
+            width: 40%;
+            /*border: 5px solid yellow;*/
+
+          }
+
+
+          .right{
+            margin-right: 0px;
+            position: absolute;
+            right: 34px;
+            top: 48px;
+             display: inline-block;
+            /*border: 5px solid white;*/
+
+          }
+          .navbar{
+               display: inline-block;
+               
+
+
+          }
+          .navbar li{
+             color: white;
+             display: inline-block;
+             /*font-size: 15px;*/
+             
+              
+          }
+          .navbar li a{
+            font-size: 30px;
+            text-decoration: none;
+            color: white;
+            padding: 4x 14px;
+            margin: 0px 8px;
+            border-radius: 9px;
+
+          }
+          .navbar li a:hover,.navbar li a.active{
+            padding: 4x 14px;
+            margin: 0px 8px;
+            text-decoration:underline;
+            color: rgb(34, 231, 198);
+            background-color: white;
+            color: black;
+            border-radius: 9px;
+            
+
+          }
+          .left img {
+            
+             width: 136px;
+             filter: invert(100%);
+
+
+          }
+          .left div{
+           text-align: center;
+           line-height :19px;
+           font-size: 20px;
+
+          }
+          .btn{
+           margin: 0px 9px;
+           color: white;
+           background-color: black;
+           padding: 4px 14px;
+           border: 2px solid grey;
+           border-radius: 10px;
+           font-size: 20px;
+           cursor: pointer;
+           font-family: Arial, Helvetica, sans-serif;
+
+
+          }
+          .btn:hover{
+          
+            background-color: white;
+            color: black;
+
+          }
+          .container{
+            border: 3px solid white;
+            /*margin-top: 90px;*/
+            margin: left 100vh;
+            
+            margin: 100px 80px;
+            padding:75px;
+            width: 33%;
+            border-radius: 25px;
+          }
+          .formgrp input{
+            text-align: center;
+            display: block;
+            width: 400px;
+            padding: 1px;
+            margin: 18px auto ;
+            border: 2px solid white;
+            font-size: 25px;
+            border-radius: 8px;         
+          
+
+
+          }
+          .container h1{
+
+            text-align: center;
+
+          }
+          .container button{
+
+            display: block;
+            
+            margin: auto;
+          }
+
+      </style>
+
+</head>
+<body>
+    <header class="Header">
+        <!-- left box for logo -->
+        <div class="left">
+              <img src="dumbbell-35686.png" alt="">
+              <div>My fitness</div>
+        </div>
+
+        <!-- center box for navbar -->
+
+        <div class="center">
+           <ul class="navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            
+            <li><a href="#">Contact Us</a></li>
+           </ul>
+        </div>
+        <!-- right  box for buttons or else -->
+        <div class="right">
+           <button class="btn">Call us </button>
+           <button class="btn"> Email us</button>
+
+        </div>
+    </header>
+   
+    <div class="container">
+      <h1>Join the best Gym of Pune Now</h1>
+      <form action="noaction.php">
+       <div class="formgrp">
+          <input type="text" name=" " placeholder="Enter your Name ">
+          <input type="text" name=" " placeholder="Enter your Age">
+          <input type="text" name=" " placeholder="Enter your Gender">
+          <input type="text" name=" " placeholder="Enter your Name Locality">
+       </div>
+       <button class="btn">
+           SUBMIT
+       </button>
+
+
+      </form>
+    </div>
+</body>
+</html>
