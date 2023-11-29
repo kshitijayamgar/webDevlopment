@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors-in-CSS</title>
+    <style>
+    h1{
+    background-color: brown;
+    color: blanchedalmond;
+    font-weight: bold;
+    text-align: center;
+
+    }
+   /* div  li p{    li chya aat kiti hee depth mde asnrya p sathi
+        background-color: green;
+        color: yellow;
+        font-weight: bold;
+    }*/
+    /*div > p{    <div> chya direct child asnarya <p> la target karnya sathi 
+        background-color: green;
+        color: yellow;
+        font-weight: bold;
+    }*/
+
+    /*div jiska peechhala sibbling hai aise element ko target karne ke liye */
+    div+p{
+        color: rgb(10, 10, 10);
+        background-color: rgb(35, 195, 235);
+    }
+    </style>
+</head>
+<body>
+    <h1>selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"><p>ANOTHER PARA INSIDE UL INSIDE li</p></li>
+
+            </ul>
+            <p>this is para of div2</p>
+        </div>
+        <p>another para div1</p>
+    </div>
+    <p>most outer para</p>
+</body>
+</html>
