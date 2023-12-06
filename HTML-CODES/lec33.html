@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before & after pseudo selectors</title>
+    <style>
+  
+  body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    background-image:url(aurelien-lemasson-theobald-g84Q_XxBtJU-unsplash.jpg);
+ 
+
+  }   
+  header::before{
+    content: "";
+    background: url(aurelien-lemasson-theobald-g84Q_XxBtJU-unsplash.jpg);
+   /* opacity: 0.5; bg img chi opacity kmi krto text nit disnyasathi*/
+  }   
+  section{
+    height: 344px;
+    
+    margin: 3px 23px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .navigation{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    font-size: 20px;
+
+  }
+li{
+    list-style: none;
+    padding: 20px 23px;
+}
+/* section chya nantr text taknar but this is not exact use of before and after*/
+section::after{     
+content: "This is content";
+
+}
+h1{
+    font-size: 4rem;
+}
+p{
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Welcome to coding world</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus, est, quisquam ad quia atque, magni sequi neque ipsa itaque facilis aut facere. Cum, autem nobis ipsum vero odio culpa nulla ut tempore enim esse.</p>
+    </section>
+    
+
+</body>
+</html>
