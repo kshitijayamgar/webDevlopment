@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box shadow text shadow</title>
+</head>
+<style>
+    .container {
+        display: flex;
+    }
+
+    .card {
+        padding: 23px 12px;
+        margin: 23px 12px;
+        /*border: 3px solid blueviolet;
+    border-radius: 9px;*/
+
+
+        background: rgb(192, 241, 94);
+
+        box-shadow: 10px 13px 14px gray;
+
+
+
+        /* box shadow mnje box chya mage shadow yete jichya values x and y nusar deto tya negative deeelya tr davya  koprytun ujvi kde tirkya yetat aani positive deelya tr ujvi kopryatun daavi kde tirvpya jatat 
+      SYNTAX:
+    box shadow mde box-shadow(offset-X offset-Y Blur-radius);
+    
+    asha 3 value astat 3rd value maage aleli shadow kiti blur havi he thrvte*/
+
+        /*box-shadow: inset 3px 15px;*/
+        /*inset aatun shadow deto */
+
+        /* multiple shadows hee deta yetat*/
+        /*
+     box-shadow: 3px 5px greenyellow,3px 5px rebeccapurple;
+     */
+        /* rgba hya color picker mde rgb"a" a=alpha alpha he thrvto ki deelela color kiti dark asla pahije*/
+    }
+
+    /*text-shadow la pn 3rd value same as box-shadow asto blur kiti hava hya sathi ani hyat pn negative values astat same as bo-shadow*/
+    .card h2 {
+        text-shadow: 3px 4px 3px gray;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h2>CPP-course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, voluptatibus nihil? Ullam
+                dignissimos consequuntur fuga autem rem? Earum non praesentium laborum aspernatur placeat! Obcaecati
+                unde ut voluptate distinctio quis sunt dolores, porro omnis minus.</p>
+
+        </div>
+        <div class="card" id="card2">
+            <h2>Html<-course  </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quasi illum enim quam iusto
+                        reiciendis qui neque, nulla aliquam, ad sed? Totam repudiandae eveniet incidunt iusto inventore
+                        animi deserunt explicabo, quidem veritatis voluptates minima!</p>
+        </div>
+        <div class="card" id="card3">
+            <h2>C-Language</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At totam, nemo earum placeat nisi dicta
+                voluptatum dolor. Eum esse ipsum repudiandae tenetur rem sint repellendus tempora vel iure nobis
+                quaerat, commodi illo debitis totam?</p>
+        </div>
+    </div>
+</body>
+
+</html>
