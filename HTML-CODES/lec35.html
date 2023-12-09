@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variables & custom properties</title>
+    <style>
+        /* jase local variable astat  tase global variable hee astat te CSS mde khali nusar lihtat */
+        :root{
+            --danger-color:rgb(243, 18, 2);
+            --safe-color:green;
+            --maxw:333px;
+        }
+.box{
+    
+    /*using variable aapn coolor assign kela*/
+    --box-color:rgb(137, 35, 233);
+    width: 200px;
+    height: 200px;
+    background: var(--safe-color);
+    border: 4px solid greenyellow;
+    margin: 2px 9px;
+    box-shadow: 6px 6px 9px var(--danger-color);
+}
+.container{
+    max-width: var(--maxw);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--danger-color );
+    margin: auto;
+
+}
+
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+    </div>
+</body>
+</html>
