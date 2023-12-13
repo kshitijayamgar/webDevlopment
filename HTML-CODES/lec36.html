@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animations & keyframes</title>
+    <style>
+        .container {
+            background-color: greenyellow;
+        }
+
+        .box {
+            background-color: aquamarine;
+            width: 250px;
+            height: 250px;
+            position: relative;
+            animation-name: kittu2;
+            animation-duration: 4s;
+            animation-iteration-count: 5;
+            /*continue animation suru ch rahav ha sathi count mde infinte dych*/
+           /* animation-fill-mode: alternate;*/
+            /*forward mule animation oude jaat aani tthch stop hot return yet nahi
+                alternate mule animation complete houn punha original la bak yeta
+                */
+               /* animation-timing-function: ease-in-out;*/
+                /*animation-delay: 3s;
+                 3sec cha count gheun mg animation start honar */
+                /* animation-direction: reverse;*/
+
+              /*  short hand of animation*/
+             /*SYNTAX:
+              animation: animation0-name animatio-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode;
+              */
+        }
+        @keyframes kittu2 {
+            
+            0%{
+               top: 0px;
+               left: 0px; 
+            }
+            25%{
+                top: 250px;
+               left: 0px; 
+            }
+            75%{
+                top: 250px;
+               left: 250px; 
+            }
+            100%{
+                top: 0px;
+               left: 250px; 
+            }
+            
+        }
+
+        @keyframes kittu {
+            from {
+                width: 200px;
+            }
+
+            to {
+                width: 900px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+
+            this is box
+        </div>
+
+    </div>
+</body>
+
+</html>
