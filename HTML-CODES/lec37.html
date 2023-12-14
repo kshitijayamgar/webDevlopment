@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transitions</title>
+    <style>
+        #box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 200px;
+            width: 200px;
+            background: red;
+            /*transition-property: background-color;
+                     transition-duration: 1s;*/
+            /*transition-timing-function: ease-out;*/
+            /* transition-delay: 2s;*/
+            /*
+                  animation sarkhi same short hand property ahe transition la pn
+
+                transition:background-color 1s ease-out  3s ;
+                       ^
+                       |
+                transition:property duration ease-out  delay ;
+     
+            */
+            transition: all 1s ease-out 3s;
+
+        }
+
+        #box:hover {
+            background-color: yellow;
+            height: 400px;
+            width: 400px;
+            border-radius: 45px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Transitions</h1>
+    <div class="container">
+        <div id="box">
+            this is my box
+        </div>
+
+    </div>
+</body>
+
+</html>
