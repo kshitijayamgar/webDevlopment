@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media-Queries-with-grid</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'nabvar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer';
+
+
+        }
+
+        @media(max-width:300px) {
+            body {
+                display: block;
+                background-color: rgb(250, 51, 16);
+
+            }
+            .container {
+                display: grid;
+                grid-gap: 1rem;
+                grid-template-areas:
+                    'nabvar navbar navbar navbar'
+                    'section section section aside'
+                    'footer footer footer footer';
+
+
+            }
+            aside {
+                display: none;
+            }
+            span {
+                display: block;
+                text-align: center;
+            }
+
+
+        }
+
+        @media(min-width:300px) and (max-width:500px) {
+            body {
+                display: block;
+                background-color: blue;
+            }
+
+            .container {
+                display: grid;
+                grid-gap: 1rem;
+                grid-template-areas:
+                    'nabvar navbar navbar navbar'
+                    'section section section aside'
+                    'footer footer footer footer';
+
+
+            }
+
+            aside {
+                display: none;
+            }
+            span {
+                display: block;
+                text-align: center;
+            }
+
+        }
+
+        @media(min-width:500px) and (max-width:800px) {
+            body {
+                display: block;
+                background-color: rgb(235, 214, 26);
+            }
+
+            .container {
+                display: grid;
+                grid-gap: 1rem;
+                grid-template-areas:
+                    'nabvar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+
+
+            }
+
+            span {
+                display: block;
+                text-align: center;
+            }
+        }
+
+
+        @media(min-width:800px) {
+            body {
+                display: block;
+                background-color: rgb(241, 148, 213);
+            }
+        }
+
+        .bdr {
+            border: 2px solid black;
+            padding: 23px;
+            background: aquamarine;
+
+        }
+
+        nav {
+            grid-area: navbar;
+            margin-right: 250px;
+
+        }
+
+        section {
+            grid-area: section;
+
+
+        }
+
+        aside {
+            grid-area: aside;
+
+
+        }
+
+        footer {
+            grid-area: footer;
+            border: 2px solid black;
+            border-radius: 8px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="bdr">
+            <span>HOME</span>
+            <span>ABOUT-US</span>
+            <span>CONTACT</span>
+        </nav>
+        <section class="bdr">
+            <h2>learn css</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio tempora obcaecati odit repellat maiores ducimus optio similique nesciunt velit assumenda nihil, quos labore, aut consequatur iusto consequuntur autem? Eaque, nihil, labore animi aspernatur illo sint perferendis eveniet molestias facere expedita illum natus minima et eligendi obcaecati earum sapiente quisquam iusto. Blanditiis, facere quo odio labore aliquid aut, reprehenderit ex alias maiores voluptatibus sed, possimus voluptates ad voluptate similique eius asperiores culpa est? Architecto doloremque aspernatur voluptas. Officiis ab placeat soluta nihil delectus saepe? Assumenda optio ipsum exercitationem saepe, aspernatur illum dicta ut sunt quo iure cumque aperiam nobis. Ducimus ratione quos provident ut, minus possimus quae iusto similique! Eligendi, sequi accusamus laudantium magnam alias praesentium quasi amet officia dolor explicabo libero, ad nobis nulla expedita ab non provident incidunt cupiditate quia sed debitis aliquid! Labore, reiciendis voluptas dicta at est laudantium quidem nisi cum harum, adipisci in tenetur impedit sequi delectus ipsam voluptates, quis provident? Provident delectus fugiat fugit dicta ab consectetur magni nam, perspiciatis voluptas exercitationem, sit saepe esse suscipit aperiam. Dolores maxime cupiditate iste expedita soluta quisquam unde corrupti id quae fuga. Ratione est distinctio tenetur debitis quasi vitae, ab vel saepe placeat itaque nulla dignissimos, asperiores porro, sint libero animi harum! Excepturi dignissimos adipisci consequuntur suscipit nesciunt hic dolor sed ut, quas culpa consectetur cum modi voluptatum quos. Quas, obcaecati, soluta cumque saepe illo quaerat qui alias fuga, neque aliquam officia! Pariatur veniam debitis autem veritatis earum distinctio quia eaque corporis! Reiciendis, harum neque a repudiandae pariatur magnam esse in nostrum ea cupiditate accusantium sit! Optio, veniam voluptas. Repellat neque unde doloribus vitae, sequi cupiditate dolore. Itaque deserunt fuga sunt enim cum fugit ullam consequatur ipsa ut aliquam voluptatum, exercitationem ad, neque dolores maxime, deleniti facilis voluptas dignissimos in a omnis libero iure tenetur. Tempore harum architecto placeat, at laboriosam dolorum sed commodi fugiat optio nesciunt voluptate facere officiis iure pariatur totam omnis. Iure impedit, nesciunt blanditiis beatae dolorum error deserunt recusandae et nemo nostrum expedita voluptate, voluptatem inventore incidunt corrupti asperiores? Quod aliquam nam perferendis debitis blanditiis ullam, ex odio dolorum, qui corrupti tempora. Doloremque nostrum deleniti tenetur maiores laudantium. Nostrum iusto neque itaque repudiandae a architecto est enim accusantium! Asperiores assumenda esse magni accusamus ex, omnis soluta aspernatur! Accusamus, officiis magni! Provident minus dolore, ratione minima a numquam tempora nam voluptatum ipsum molestiae maiores fugiat, quasi ullam distinctio laborum cum unde odit! Cumque, est illum.</p>
+        </section>
+        <aside class="bdr">
+            <h1>More-about-us</h1>
+        </aside>
+    </div>
+    <footer class="bdr">Copyright-Reserved-2023</footer>
+
+</body>
+
+</html>
